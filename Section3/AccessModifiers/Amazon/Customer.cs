@@ -7,12 +7,16 @@ namespace Amazon
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public void Promote()
+        public int Promote()
         {
             var calculator = new RateCalculator();
-            var rating = calculator.Calculate(this);
-
-            Console.WriteLine("Promote logic changed.");
+            var rating = calculator.Calculate(this);    //here this refers to Customer Class in amazon
+                                                        //Inside the RateCalculator there the Calculator class is initialzed
+                                                        //with Customer customer signature, thats why we need to give a customer 
+                                                        //inside calculator.Calculate(this)
+           
+            
+            return rating;
         }
     }
 }
