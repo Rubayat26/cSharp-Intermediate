@@ -35,7 +35,7 @@ namespace Testability.UnitTests
         }
     }
 
-    public class FakeShippingCalculator : IShippingCalculator
+    public class FakeShippingCalculator : IShippingCalculator   // to generate the calculate shipping method "alt+enter" and then "enter" again
     {
         public float CalculateShipping(Order order)
         {
@@ -43,3 +43,4 @@ namespace Testability.UnitTests
         }
     }
 }
+ 

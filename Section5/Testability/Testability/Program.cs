@@ -8,7 +8,7 @@ namespace Testability
         {
             var orderProcessor = new OrderProcessor(new ShippingCalculator());
             var order = new Order {DatePlaced = DateTime.Now, TotalPrice = 100f};
-            orderProcessor.Process(order);
+            orderProcessor.Process(order);   // here we are trying to build an unit test for the Process method
         }
     }
 }

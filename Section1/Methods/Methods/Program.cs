@@ -37,7 +37,8 @@ namespace Methods
             Console.WriteLine(calculator.Add(1, 2));
             Console.WriteLine(calculator.Add(1, 2, 3));
             Console.WriteLine(calculator.Add(1, 2, 3, 4));
-            Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4, 5 }));
+            Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4, 5 }));  //because of the params method we can
+                                                                             //declare the numbers like this also
         }
 
         static void UsePoints()
@@ -45,7 +46,7 @@ namespace Methods
             try
             {
                 var point = new Point(10, 20);
-                point.Move(null);
+                point.Move(null);             // here we are point overload method point.Move(new Point(40,60))
                 Console.WriteLine("Point is at ({0}, {1})", point.X, point.Y);
 
                 point.Move(100, 200);

@@ -2,7 +2,8 @@
 
 namespace Extensibility
 {
-    public class FileLogger : ILogger
+    public class FileLogger : ILogger        // as FileLogger is based on ILogger; LogError and LogInfo comes with ILogger
+                                             // In FileLoggers constructor we have added string path
     {
         private readonly string _path;
 
@@ -23,7 +24,7 @@ namespace Extensibility
 
         private void Log(string message, string messageType)
         {
-            using (var streamWriter = new StreamWriter(_path, true))
+            using (var streamWriter = new StreamWriter(_path, true))   // using is needed for streamWriter here   
             {
                 streamWriter.WriteLine(messageType + ": " + message);
             }

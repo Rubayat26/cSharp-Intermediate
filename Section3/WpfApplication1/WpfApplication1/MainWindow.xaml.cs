@@ -27,10 +27,11 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var button = sender as Button;
-            if (button != null)
+            var button = sender as Button;               // here we are downcasting sender to Button, otherwise we would  
+            if (button != null)                          // not be able access the classes of button type
             {
-                MessageBox.Show(button.ActualHeight.ToString());
+                MessageBox.Show(button.ActualHeight.ToString()); //Show method requires a string, But actualHieght
+                                                                 // is a number.
             }
 
             MessageBox.Show("Hello World!");
