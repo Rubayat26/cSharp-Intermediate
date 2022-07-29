@@ -4,7 +4,7 @@
     {
         private readonly Logger _logger;
 
-        public DbMigrator(Logger logger)
+        public DbMigrator(Logger logger)    //ctor + tab for contructor snippet 
         {
             _logger = logger;
         }

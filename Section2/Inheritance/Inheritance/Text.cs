@@ -2,7 +2,7 @@
 
 namespace Inheritance
 {
-    public class Text : PresentationObject
+    public class Text : PresentationObject  // in CSharp a class can have only one parent
     {
         public int FontSize { get; set; }
         public string FontName { get; set; }

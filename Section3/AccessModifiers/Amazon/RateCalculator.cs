@@ -1,7 +1,8 @@
 ﻿
 namespace Amazon
 {
-    public class RateCalculator
+    internal class RateCalculator        // internal is a modifier often used with classes
+                                         // not their memebers
     {
         public int Calculate(Customer customer)     // 
         {
