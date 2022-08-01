@@ -1,0 +1,18 @@
+﻿// See https://aka.ms/new-console-template for more information
+// Console.WriteLine("Hello, World!");
+
+
+
+
+
+
+namespace StackDesign 
+{
+    class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+}
