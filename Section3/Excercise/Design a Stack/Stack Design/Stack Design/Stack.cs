@@ -10,7 +10,7 @@ namespace StackDesign
         ArrayList stack = new ArrayList();
         public object pop=0;        //if we do not declare k as object 
 
-
+        
 
         internal void Push()
         {
