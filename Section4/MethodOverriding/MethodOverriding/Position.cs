@@ -7,7 +7,8 @@
         
 
 
-        public Position (int x, int y)   // to take integer values as input we need this co
+        public Position (int x, int y)   // to take integer values as input we need
+                                         // this constructor
         {
             X = x;
             Y = y;
