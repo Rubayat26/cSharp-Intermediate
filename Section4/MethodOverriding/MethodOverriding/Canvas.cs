@@ -6,7 +6,7 @@ namespace MethodOverriding
     public class Canvas
     {
         public void DrawShapes(List<Shape> weNeedshapes) // here the parameter for DrawShapes
-                                                   // is a generic list of Shapes
+                                                        // is a generic list of Shapes
         {
             foreach (var shape in weNeedshapes)
             {
