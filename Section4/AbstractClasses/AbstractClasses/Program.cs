@@ -5,11 +5,15 @@ namespace AbstractClasses
     {
         static void Main(string[] args)
         {
-//            var shape = new Shape();
+//            var shape = new Shape();  // Abstract classes cannot be initiated,
+//                                      // wont compile
 
 
             var circle = new Circle();
-            circle.Draw();
+            circle.Draw(); 
+           
+            circle.Copy();
+                    
 
             var rectangle = new Rectangle();
             rectangle.Draw();
