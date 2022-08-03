@@ -5,7 +5,9 @@
         float CalculateShipping(Order order);
     }
 
-    public class ShippingCalculator : IShippingCalculator
+    public class ShippingCalculator : IShippingCalculator  // this simply says, Shipping
+                                                           // Calculator implements
+                                                           // IShippingCalculator
     {
         public float CalculateShipping(Order order)
         {
@@ -16,3 +18,6 @@
         }
     }
 }
+
+
+// Interfacing looks to simiar to inheritance but it is not 

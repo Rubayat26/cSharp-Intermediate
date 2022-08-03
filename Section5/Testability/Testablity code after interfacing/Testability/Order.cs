@@ -11,7 +11,8 @@ namespace Testability
 
         public bool IsShipped
         {
-            get { return Shipment != null; }
+            get { return Shipment != null; }     // if Shipment is not null
+                                                 // IsShipped will become true 
         }
     }
 }
