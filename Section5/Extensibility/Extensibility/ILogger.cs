@@ -6,3 +6,6 @@
         void LogInfo(string message);
     }
 }
+
+
+// here the Interface and the class are stroed is separate file  

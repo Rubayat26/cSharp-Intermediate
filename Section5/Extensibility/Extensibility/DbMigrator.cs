@@ -7,6 +7,8 @@ namespace Extensibility
         private readonly ILogger _logger;
 
         public DbMigrator(ILogger logger)      // DBMigrator only knows there is a ILogger
+                                               // To pass an interface we need to pass it to its 
+                                               //constructor 
         {
             _logger = logger;
         } 
@@ -21,3 +23,8 @@ namespace Extensibility
         }
     }
 }
+
+
+
+// Here DbMigrator has no idea what logger is, it just knows that it is of Ilogger Type and it has 
+// two methods L
