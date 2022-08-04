@@ -28,4 +28,10 @@ namespace Testability
 }
 
 
-// Now if we go change some properties in ShippingCalculator 
+// Now if we go change some properties in ShippingCalculator
+// 
+
+
+// Here we did not create interaces for order beacuase here we are trying to test how 
+// the order is processed here and we wanted to keep it independent of the 
+//CalculateShipping property of the shippingCalculator 

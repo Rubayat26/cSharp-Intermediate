@@ -4,7 +4,7 @@ using System;
 namespace Testability.UnitTests
 {
     [TestClass] // each test class has attributes as test class and bunch of methods 
-    public class OrderProcessorTests
+    public class OrderProcessorTests    //OrderProcessor is the class we are testing 
     {
         
 
@@ -55,11 +55,12 @@ namespace Testability.UnitTests
                                                        // CalculateShipping was the only method
                                                        // described inside ShippingCalculator 
         {
-            return 1;      // no logic here, this return does not mean anything
+            return 1;      // no logic here, this return does not mean anything, we just want that 
+                           //fake class working 
         }
     }
 }
- 
+
 
 // here inside new OrderProcessor we are passing a FakeShippingCaclulator as we need to pass a 
 //IShippingCaclulator;  Here our goal is to isolate the process so we need to pass an object which 
@@ -68,3 +69,8 @@ namespace Testability.UnitTests
 
 
 // Here our motive to make the Orderprocessor Independent of the shippingCalculator 
+
+
+
+
+// This [TestClass] and [TestMethod] are attributes that we can use later on to run tests 
