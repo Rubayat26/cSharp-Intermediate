@@ -43,21 +43,28 @@ namespace DesignWorkflowEngine
         static void Main(string[] args)
         {
             
-            var workflow= new WorkFlow();
+            var workflow= new Workflow();
             workflow.AddActivity(new ListenToMusic());
-            workflow.Run();
             workflow.AddActivity(new GoForAWalk());
-            workflow.Run();
+            
+
+
+            var engine = new WorkflowEngine();
+            engine.Run(workflow);
         }
     }
 }
 
-// Always try to create the classes inside this Program.cs then ctrl+e to
-//create new files for them    
+
 
 
 // Now if we want to add an activity we just need to create add new class and 
 // link it to the IActivity interface and in the MainProgram Pass it inside the 
 // workflow.AddActivity 
+
+// We can create new workflows which consist of lot of activites and send
+// them to the workflowEngine for publishing  
+
+
 
 // This is a program made with the OCP Principal
