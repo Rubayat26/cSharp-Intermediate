@@ -16,7 +16,7 @@ namespace Polymorphism
 }
 
 
-
+// Here we wnated to create intefaces to achieve Polymorphism  
 // Here the idea is to create an Polymorphic Interface of Notifcations
 // We created a IList of INotificationChannels
 // then created class MailNotioficationChannel which points to INotificationChannel
