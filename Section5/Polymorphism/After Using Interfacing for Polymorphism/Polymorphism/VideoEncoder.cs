@@ -13,7 +13,8 @@ namespace Polymorphism
             _notificationChannels = new List<INotificationChannel>();
         }
 
-        public void Encode(Video video)
+        public void Encode(Video video)  //Here the video has no use 
+                                         // Just to show how it works 
         {
             // Video encoding logic     
             // ...
@@ -28,3 +29,8 @@ namespace Polymorphism
         }
     }
 }
+
+
+
+//using System.Collections.Generic for IList 
+

@@ -1,6 +1,6 @@
 ﻿namespace Polymorphism
 {
-    public class Message
+    public class Video
     {
     }
 }
