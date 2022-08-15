@@ -35,7 +35,7 @@ namespace Indexers
         public string this[string key]
         {
             get { return _dictionary[key]; }
-            set { _dictionary[key] = value; }  // here value refers to the value ww put right sid eof assignement operator
+            set { _dictionary[key] = value; }  // here value refers to the value we put right sid of assignement operator
                                                // main program, where we assigned the value MOSH
         }
     }
