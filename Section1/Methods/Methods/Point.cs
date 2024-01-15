@@ -24,7 +24,7 @@ namespace Methods
             if (newLocation == null)
                 throw new ArgumentNullException("newLocation"); //throwing an exception error  //defencive programming
 
-            Move(newLocation.X, newLocation.Y); //here we are calling the move method from line 16 
+            Move(newLocation.X, newLocation.Y); //here we are calling the move method from line 16, this way we are not rewriting the same concept twice in the code 
         }
     }
 }
