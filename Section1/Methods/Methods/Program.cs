@@ -37,9 +37,10 @@ namespace Methods
             Console.WriteLine(calculator.Add(1, 2));
             Console.WriteLine(calculator.Add(1, 2, 3));
             Console.WriteLine(calculator.Add(1, 2, 3, 4));
-            Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4, 5 }));  
-            Console.WriteLine(calculator.Add( 1, 2, 3, 4, 5 ));              //because of the params method we can
-                                                                             //declare the numbers like this also
+            Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4, 5 }));  //because of the params method we can just write the code like above 
+                                                                            //add method otherwise we would have to use this line
+                                                                             
+            Console.WriteLine(calculator.Add( 1, 2, 3, 4, 5 ));              
         }
 
         static void UsePoints()
