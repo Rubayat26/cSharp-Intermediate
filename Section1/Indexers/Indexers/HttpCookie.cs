@@ -5,7 +5,7 @@ namespace Indexers
 {
     public class HttpCookie
     {
-        private readonly Dictionary<string, string> _dictionary;
+        private readonly Dictionary<string, string> _dictionary;  //this means the keys are of type string and values are aslo of type string 
      // private readonly Dictionary<string, string> _dictionary = new Dictionary<string, string>(); //we can initlize
                                                                                                     // the list here
                                                                                                     // instead of declaring
