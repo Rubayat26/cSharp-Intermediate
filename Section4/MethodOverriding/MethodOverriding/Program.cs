@@ -49,7 +49,7 @@ namespace MethodOverriding
             shape1.Width = 400;
             
          // shape1.Position.X = 20;     // this line will throw an exception if because 
-                                        // Shape.Position method requres a position as input 
+                                        // Shape.Position method requres a  whole position as input 
                                         // shape1 knows a method Position but it does not know what goes 
                                         // inside it while setting the value of X and Y 
            
