@@ -20,7 +20,7 @@ namespace Polymorphism
             // ...
 
             foreach (var channel in _notificationChannels)
-                channel.Send(new Message());
+                channel.Send();
         }
 
         public void RegisterNotificationChannel(INotificationChannel channel)

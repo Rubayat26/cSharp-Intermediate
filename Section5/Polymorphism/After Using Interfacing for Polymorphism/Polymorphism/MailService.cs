@@ -4,7 +4,7 @@ namespace Polymorphism
 {
     public class MailService
     {
-        public void Send(Mail mail)
+        public void Send()
         {
             Console.WriteLine("Sending email...");
         }

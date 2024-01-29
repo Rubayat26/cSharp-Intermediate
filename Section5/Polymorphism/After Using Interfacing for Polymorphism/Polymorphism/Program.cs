@@ -7,7 +7,10 @@ namespace Polymorphism
         {
             var encoder = new VideoEncoder();
             encoder.RegisterNotificationChannel(new MailNotificationChannel());
-            encoder.Encode(new Video());
+            encoder.Encode(new Video());  //Here we are not using the video 
+                                          //Just to show how it works
+                                          //the Encode method needs a video beacuase in
+                                          //its blueprint it is defined like that 
             encoder.RegisterNotificationChannel(new SmsNotificationChannel());
             
             encoder.Encode(new Video());
@@ -36,6 +39,7 @@ namespace Polymorphism
 
 
 //OCP - Open Close Principle 
+        //Open for Extension and Closed for Modification
 
 
 
