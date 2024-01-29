@@ -5,8 +5,12 @@ namespace Extensibility
     {
         static void Main(string[] args)
         {
-            var dbMigrator = new DbMigrator(new FileLogger("C:\\Projects\\log.txt")); 
-            dbMigrator.Migrate();
+            //var dbMigrator = new DbMigrator(new FileLogger("C:\\Projects\\log.txt")); 
+            //dbMigrator.Migrate();
+
+            var consoleLogger = new ConsoleLogger();
+            var dbMigrator2 = new DbMigrator(consoleLogger);
+            dbMigrator2.Migrate();
         }
     }
 }
@@ -22,3 +26,6 @@ namespace Extensibility
 
 
 // OCP principle : Open for extension but closed for modification
+
+
+// We should be able to extend the behavior of a class without modifying it

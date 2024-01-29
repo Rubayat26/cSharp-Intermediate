@@ -9,6 +9,7 @@ namespace Testability
         float CalculateShipping(Order order);  //no accessmodifiers and no body 
     }
 
+    
     public class ShippingCalculator : IShippingCalculator  // this simply says, Shipping
                                                            // Calculator implements
                                                            // IShippingCalculator

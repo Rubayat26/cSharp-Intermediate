@@ -15,7 +15,12 @@ namespace Extensibility
 
         public void Migrate()
         {
-            _logger.LogInfo("Migrationg started at {0}" + DateTime.Now);
+            _logger.LogInfo("Migrationg started at {0}" + DateTime.Now); //Based on the type of logger
+                                                                          // it will log the info
+                                                                          // if ConsoleLogger is passed
+                                                                          // it will log to console
+                                                                          // if FileLogger is passed
+                                                                          // it will log to file
             
             // Details of migrating the database
 
@@ -23,6 +28,7 @@ namespace Extensibility
         }
     }
 }
+
 
 
 

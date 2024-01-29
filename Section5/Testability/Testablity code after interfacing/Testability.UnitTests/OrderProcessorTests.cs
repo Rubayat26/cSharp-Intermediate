@@ -13,13 +13,15 @@ namespace Testability.UnitTests
         [ExpectedException(typeof(InvalidOperationException))] //Anoter assembly can read this
                                                                //meta data and do something about it 
 
-        // METHODNAME_CONDITION_EXPECTATION
-        public void Process_OrderIsAlreadyShipped_ThrowsAnException()
+       
+        public void Process_OrderIsAlreadyShipped_ThrowsAnException()  // METHODNAME_CONDITION_EXPECTATION
+                                                                       // this is the convention for naming methods for test
         {
             var orderProcessor = new OrderProcessor(new FakeShippingCalculator());
             var order = new Order
             {
-                Shipment = new Shipment()
+                Shipment = new Shipment()   // here we are setting the shipment property of the order
+                                            // so that the order is already shipped and Shipped property is true
             };
 
             orderProcessor.Process(order);
@@ -48,7 +50,7 @@ namespace Testability.UnitTests
         }
     }
 
-    public class FakeShippingCalculator : IShippingCalculator   // to generate the calculate shipping method "alt+enter" and then "enter" again
+    public class FakeShippingCalculator : IShippingCalculator   // to generate all the memeber methods of implemented Interface "alt+enter" and then "enter" again
     {
         public float CalculateShipping(Order order)    // methods declared in an interface
                                                        // needs to be public
