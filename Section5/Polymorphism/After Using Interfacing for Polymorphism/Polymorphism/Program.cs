@@ -26,7 +26,7 @@ namespace Polymorphism
 // then created class SmsNotificationChannel which points to INotificationChannel
 // Now we added the NotificationChannels to the INotificationList
 // So based on the NotificationChannel the program would behave different or send 
-//different notification
+//different notification, so the send method is polymorphyc here
 
 
 // Now if we want to add a VoiceNotificationChannel to the Ilist we dont need to 
